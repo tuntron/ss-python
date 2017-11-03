@@ -1,6 +1,11 @@
 # ss-python
-#Shadowsocks for Windows 客户端下载：
-#https://github.com/shadowsocks/shadowsocks-windows/releases
+## Shadowsocks for Windows 客户端下载：
+## https://github.com/shadowsocks/shadowsocks-windows/releases
 
-#使用方法：
-#使用root用户登录，运行以下命令：
+## 使用方法：
+## 使用root用户登录，运行以下命令：
+```sh
+wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/tuntron/ss-python/master/shadowsocks.sh
+chmod +x shadowsocks.sh
+./shadowsocks.sh 2>&1 | tee shadowsocks.log
+```
