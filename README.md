@@ -28,3 +28,10 @@ Enjoy it!
 ```sh
 ./shadowsocks.sh uninstall
 ```
+### 如果遇到这个报错：
+###### [Error] libsodium install failed!
+先执行
+```sh
+ yum install gcc
+```
+在执行脚本
