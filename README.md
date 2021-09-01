@@ -44,3 +44,31 @@ wget --no-check-certificate -O v2-install.sh https://raw.githubusercontent.com/t
 chmod +x v2-install.sh
 ./v2-install.sh 2>&1 | tee v2-install.log
 ```
+
+# v2-docker 安装
+```sh
+yum install docker
+mkdir -p /etc/v2ray
+cat > /etc/v2ray/config.json <<EOF
+{
+  "inbounds": [{
+    "port": 9000,
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "11c2a696-0366-4524-b8f0-9a9c21512b02",
+          "level": 1,
+          "alterId": 64
+        }
+      ]
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  }]
+}
+EOF
+docker run -d -p 9000:9000 --name v2ray --restart=always -v /etc/v2ray:/etc/v2ray docker.io/v2fly/v2fly-core
+```
