@@ -35,3 +35,12 @@ Enjoy it!
  yum install gcc
 ```
 在执行脚本
+
+# v2-安装
+#### 使用方法：
+##### 使用root用户登录，运行以下命令：
+```sh
+wget --no-check-certificate -O v2-install.sh https://raw.githubusercontent.com/tuntron/ss-python/master/v2-install.sh
+chmod +x v2-install.sh
+./v2-install.sh 2>&1 | tee v2-install.log
+```
