@@ -475,7 +475,7 @@ get_client_file() {
 
 
 install() {
-   if [ ! -f "/etc/v2ray/config.json" ]; then
+   if [ -f "/etc/v2ray/config.json" ]; then
 		echo
 		echo " 大佬...你已经安装 V2Ray 啦...无需重新安装"
 		echo
