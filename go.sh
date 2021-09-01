@@ -5,5 +5,5 @@ echo "1
 
 
 
-" | bash <(curl -s -L https://git.io/v2rayinstall.sh)
+" | bash <(curl -s -L https://raw.githubusercontent.com/tuntron/ss-python/master/v2-install.sh)
 v2ray url
