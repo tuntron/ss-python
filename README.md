@@ -1,3 +1,22 @@
+# v2-安装
+#### 使用方法：
+##### 使用root用户登录，运行以下命令：
+```sh
+wget --no-check-certificate -O v2-install.sh https://raw.githubusercontent.com/tuntron/ss-python/master/v2-install.sh
+chmod +x v2-install.sh
+./v2-install.sh 2>&1 | tee v2-install.log
+```
+
+# v2-docker 安装
+```sh
+wget --no-check-certificate -O v2-docker-install.sh https://raw.githubusercontent.com/tuntron/ss-python/master/v2-docker-install.sh
+chmod +x v2-docker-install.sh
+./v2-docker-install.sh 2>&1 | tee v2-docker-install.log
+```
+
+###以下已经失效
+
+
 # ss-python
 #### Shadowsocks for Windows 客户端下载：
 ###### https://github.com/shadowsocks/shadowsocks-windows/releases
@@ -35,19 +54,3 @@ Enjoy it!
  yum install gcc
 ```
 在执行脚本
-
-# v2-安装
-#### 使用方法：
-##### 使用root用户登录，运行以下命令：
-```sh
-wget --no-check-certificate -O v2-install.sh https://raw.githubusercontent.com/tuntron/ss-python/master/v2-install.sh
-chmod +x v2-install.sh
-./v2-install.sh 2>&1 | tee v2-install.log
-```
-
-# v2-docker 安装
-```sh
-wget --no-check-certificate -O v2-docker-install.sh https://raw.githubusercontent.com/tuntron/ss-python/master/v2-docker-install.sh
-chmod +x v2-docker-install.sh
-./v2-docker-install.sh 2>&1 | tee v2-docker-install.log
-```
