@@ -394,65 +394,6 @@ mk_vmess_config() {
       }
     ],
     "routings" : [
-      {
-        "name" : "all_to_main",
-        "domainStrategy" : "AsIs",
-        "rules" : [
-          {
-            "type" : "field",
-            "outboundTag" : "main",
-            "port" : "0-65535"
-          }
-        ]
-      },
-      {
-        "name" : "bypasscn_private_apple",
-        "domainStrategy" : "IPIfNonMatch",
-        "rules" : [
-          {
-            "type" : "field",
-            "outboundTag" : "direct",
-            "domain" : [
-              "localhost",
-              "domain:me.com",
-              "domain:lookup-api.apple.com",
-              "domain:icloud-content.com",
-              "domain:icloud.com",
-              "domain:cdn-apple.com",
-              "domain:apple-cloudkit.com",
-              "domain:apple.com",
-              "domain:apple.co",
-              "domain:aaplimg.com",
-              "domain:guzzoni.apple.com",
-              "geosite:cn"
-            ]
-          },
-          {
-            "type" : "field",
-            "outboundTag" : "direct",
-            "ip" : [
-              "geoip:private",
-              "geoip:cn"
-            ]
-          },
-          {
-            "type" : "field",
-            "outboundTag" : "main",
-            "port" : "0-65535"
-          }
-        ]
-      },
-      {
-        "name" : "all_to_direct",
-        "domainStrategy" : "AsIs",
-        "rules" : [
-          {
-            "type" : "field",
-            "outboundTag" : "direct",
-            "port" : "0-65535"
-          }
-        ]
-      }
     ]
   }
 EOF
