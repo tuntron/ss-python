@@ -281,7 +281,7 @@ pause() {
 }
 
 docker_start() {
-	docker run -d -p $v2ray_port:$v2ray_port --name v2ray --restart=always -v /etc/v2ray:/etc/v2ray teddysun/v2ray:latest
+	docker run -d -p 8888:$v2ray_port --name v2ray --restart=always -v /etc/v2ray:/etc/v2ray teddysun/v2ray:latest
 }
 
 show_config_info() {
@@ -335,7 +335,7 @@ mk_vmess_config() {
                   "level" : 0
                 }
               ],
-              "port" : $v2ray_port
+              "port" : 8888
             }
           ]
         },
