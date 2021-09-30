@@ -281,6 +281,7 @@ pause() {
 }
 
 docker_start() {
+	systemctl restart docker
 	docker run -d -p 8888:$v2ray_port --name v2ray --restart=always -v /etc/v2ray:/etc/v2ray teddysun/v2ray:latest
 }
 
