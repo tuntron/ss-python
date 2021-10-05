@@ -24,6 +24,9 @@ chmod +x v2-docker-install.sh
 #### Shadowsocks for Mac 客户端下载：
 ###### https://github.com/shadowsocks/ShadowsocksX-NG/releases
 
+#### v2 客户端下载：
+###### https://tlanyan.pp.ua/v2ray-clients-download/
+
 
 #### 使用方法：
 ##### 使用root用户登录，运行以下命令：
