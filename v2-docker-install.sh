@@ -434,7 +434,7 @@ install() {
 	show_config_info
 	get_client_file
 	stop_firewall
-	docker ps
+	service docker restart
 }
 
 # 简单粗暴，关闭防火墙
